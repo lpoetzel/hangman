@@ -28,6 +28,7 @@ export default function HangmanWord({
                 guessedLetters.includes(letter) || reveal
                   ? "visible"
                   : "hidden",
+
               color:
                 !guessedLetters.includes(letter) && reveal ? "red" : "black",
             }}

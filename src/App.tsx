@@ -17,9 +17,9 @@ function App() {
   );
 
   const isLoser = incorrectLetters.length >= 6;
-  const isWinner = wordToGuess.split("").every((letter) => {
-    guessedLetters.includes(letter);
-  });
+  const isWinner = wordToGuess
+    .split("")
+    .every((letter) => guessedLetters.includes(letter));
 
   const addGuessedLetter = useCallback(
     (letter: string) => {
